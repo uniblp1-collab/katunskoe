@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="Упаковка перепелиного мяса">
+  <rect width="400" height="300" fill="#e8dcc4"/>
+  <rect x="30" y="40" width="340" height="220" rx="16" fill="#f4ecd8" stroke="#2d4a2b" stroke-width="3"/>
+  <rect x="30" y="40" width="340" height="54" rx="16" fill="#2d4a2b"/>
+  <text x="200" y="76" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#f4ecd8" font-weight="bold">ПЕРЕПЕЛИНОЕ МЯСО</text>
+  <circle cx="90" cy="150" r="30" fill="#e8963c"/>
+  <path d="M65 174 L90 128 L115 174 Z" fill="#3f6b3a"/>
+  <ellipse cx="220" cy="150" rx="46" ry="28" fill="#c97b5a"/>
+  <ellipse cx="290" cy="170" rx="36" ry="22" fill="#b8664a"/>
+  <ellipse cx="180" cy="185" rx="34" ry="20" fill="#c97b5a"/>
+  <ellipse cx="250" cy="130" rx="30" ry="18" fill="#b8664a"/>
+  <text x="200" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#2d4a2b">Натуральное и полезное</text>
+</svg>

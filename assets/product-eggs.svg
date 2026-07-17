@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="Упаковка перепелиных яиц, 20 штук">
+  <rect width="400" height="300" fill="#e8dcc4"/>
+  <rect x="30" y="40" width="340" height="220" rx="16" fill="#f4ecd8" stroke="#c9b98f" stroke-width="3"/>
+  <path d="M30 40 h340 v54 q-170 34 -340 0 Z" fill="#2d4a2b"/>
+  <text x="200" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#f4ecd8" font-weight="bold">КАТУНСКИЕ</text>
+  <circle cx="200" cy="140" r="34" fill="#e8963c"/>
+  <path d="M170 168 L200 118 L230 168 Z" fill="#3f6b3a"/>
+  <text x="200" y="212" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#2d4a2b" font-weight="bold">ПЕРЕПЁЛКИ</text>
+  <rect x="140" y="225" width="120" height="26" rx="6" fill="#2d4a2b"/>
+  <text x="200" y="243" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#f4ecd8">20 ШТУК</text>
+  <g>
+    <ellipse cx="55" cy="120" rx="16" ry="20" fill="#f0e2bf" stroke="#c9b98f"/>
+    <circle cx="50" cy="112" r="1.6" fill="#8a5a34"/>
+    <ellipse cx="55" cy="165" rx="16" ry="20" fill="#f0e2bf" stroke="#c9b98f"/>
+    <circle cx="60" cy="170" r="1.6" fill="#8a5a34"/>
+    <ellipse cx="345" cy="120" rx="16" ry="20" fill="#f0e2bf" stroke="#c9b98f"/>
+    <circle cx="340" cy="128" r="1.6" fill="#8a5a34"/>
+    <ellipse cx="345" cy="165" rx="16" ry="20" fill="#f0e2bf" stroke="#c9b98f"/>
+    <circle cx="350" cy="158" r="1.6" fill="#8a5a34"/>
+  </g>
+</svg>
