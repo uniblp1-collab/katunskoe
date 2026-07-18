@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     burgerBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
 
-  mainNav.querySelectorAll('.nav-link, .nav-cta').forEach(function (link) {
+  mainNav.querySelectorAll('.nav-link, .header-phone').forEach(function (link) {
     link.addEventListener('click', function () {
       mainNav.classList.remove('open');
       burgerBtn.setAttribute('aria-expanded', 'false');

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Ферма в предгорьях Катуни: горы, поле и амбар">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f6e6c3"/>
+      <stop offset="100%" stop-color="#f1cf93"/>
+    </linearGradient>
+    <linearGradient id="hillFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7fa06a"/>
+      <stop offset="100%" stop-color="#5f8a4e"/>
+    </linearGradient>
+    <linearGradient id="hillNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4d7a3c"/>
+      <stop offset="100%" stop-color="#365c29"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="360" fill="url(#sky)"/>
+
+  <circle cx="1030" cy="80" r="46" fill="#f4b860" opacity="0.85"/>
+
+  <path d="M0 190 L90 130 L180 175 L260 110 L340 165 L430 95 L520 160 L610 120 L700 170 L800 115 L900 165 L1000 130 L1090 172 L1200 140 L1200 260 L0 260 Z" fill="url(#hillFar)" opacity="0.55"/>
+
+  <g opacity="0.9">
+    <rect x="120" y="205" width="60" height="55" fill="#8a5a34"/>
+    <polygon points="110,205 150,168 190,205" fill="#5a3a20"/>
+    <rect x="140" y="225" width="18" height="35" fill="#4a2f18"/>
+    <rect x="118" y="203" width="64" height="6" fill="#3f2a17"/>
+  </g>
+
+  <path d="M0 235 L100 195 L220 245 L340 200 L460 250 L600 205 L740 252 L880 210 L1020 250 L1200 215 L1200 360 L0 360 Z" fill="url(#hillNear)"/>
+
+  <g stroke="#2f4a24" stroke-width="3" opacity="0.5">
+    <path d="M40 300 q6 -14 0 -28" fill="none"/>
+    <path d="M70 310 q6 -14 0 -28" fill="none"/>
+    <path d="M100 300 q6 -14 0 -28" fill="none"/>
+    <path d="M900 300 q6 -14 0 -28" fill="none"/>
+    <path d="M940 312 q6 -14 0 -28" fill="none"/>
+    <path d="M980 300 q6 -14 0 -28" fill="none"/>
+  </g>
+
+  <g fill="none" stroke="#c9a35a" stroke-width="4" opacity="0.6">
+    <path d="M0 275 L60 262 L120 278 L180 260 L240 278 L300 262"/>
+    <circle cx="60" cy="262" r="4" fill="#c9a35a" stroke="none"/>
+    <circle cx="180" cy="260" r="4" fill="#c9a35a" stroke="none"/>
+  </g>
+</svg>

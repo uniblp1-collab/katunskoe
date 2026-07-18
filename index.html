@@ -13,11 +13,30 @@
 </head>
 <body>
 
+<!-- Icon sprite -->
+<svg style="display:none">
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c7 1 13-3.5 14-13.5C10.5 4 5.5 9 5 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 18C10 14 13 10 18 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5V12l3.2 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pine" viewBox="0 0 24 24"><path d="M12 3l4.5 7h-2.6L18.5 15h-3L18 20H6l2.5-5h-3l4.6-5H7.5z" fill="currentColor"/><rect x="11" y="20" width="2" height="2" fill="currentColor"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.2-4.4-9.7-9C.6 7.2 2.4 4 5.8 4c2 0 3.4 1.1 4.2 2.4C10.8 5.1 12.2 4 14.2 4c3.4 0 5.2 3.2 3.5 7-2.5 4.6-9.7 9-9.7 9z" fill="currentColor"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5l3 .6.9 3.4-2 1.7c1 2.4 2.9 4.3 5.3 5.3l1.7-2 3.4.9.6 3a2 2 0 0 1-2 2.3C10 18.5 5.5 14 5.4 6.5a2 2 0 0 1 1.2-3z" fill="currentColor"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.6 7-12a7 7 0 1 0-14 0c0 5.4 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6" fill="currentColor"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4.5 7l7.5 6 7.5-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-plane" viewBox="0 0 24 24"><path d="M21 3L3 10.5l6.5 2.3L12 21l3-6 6-12z" fill="currentColor"/></symbol>
+  <symbol id="i-basket" viewBox="0 0 24 24"><path d="M4 9h16l-1.6 9.2a2 2 0 0 1-2 1.8H7.6a2 2 0 0 1-2-1.8L4 9z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 9l1-4.5h6L16 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M10 12.5v4M14 12.5v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4.5 12.5l5 5 10-11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
 <header class="site-header" id="top">
   <div class="container header-inner">
     <a href="#top" class="brand">
       <img src="assets/logo-badge.jpg" alt="" class="brand-logo">
-      <span class="brand-name">Катунские<br><em>Перепёлки</em></span>
+      <span class="brand-copy">
+        <span class="brand-name">Катунские Перепёлки</span>
+        <span class="brand-tag">Фермерская продукция</span>
+      </span>
     </a>
 
     <button class="burger" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false" aria-controls="mainNav">
@@ -28,7 +47,7 @@
       <a href="#catalog" class="nav-link">Каталог</a>
       <a href="#about" class="nav-link">О ферме</a>
       <a href="#contacts" class="nav-link">Контакты</a>
-      <a href="#contacts" class="nav-cta">Заказать</a>
+      <a href="tel:[ТЕЛЕФОН]" class="header-phone"><svg class="ic"><use href="#i-phone"/></svg>[ТЕЛЕФОН]</a>
     </nav>
   </div>
 </header>
@@ -36,61 +55,48 @@
 <main>
 
   <section class="hero" id="hero">
-    <div class="hero-photo">
-      <img src="assets/hero-photo.jpg" alt="Упаковка перепелиных яиц «Катунские Перепёлки» и перепелиное мясо на деревянном столе">
-    </div>
-    <div class="hero-veil"></div>
-
     <div class="container hero-inner">
       <div class="hero-text">
-        <span class="eyebrow reveal" style="--d:0ms"><span class="eyebrow-dash"></span>Фермерская продукция · предгорья Катуни</span>
-        <h1 class="reveal" style="--d:90ms">Перепелиное <em>яйцо</em> и&nbsp;мясо<br>прямо с фермы</h1>
-        <p class="hero-subtitle reveal" style="--d:180ms">Выращиваем перепёлок в чистой экологической зоне — без гормонов и антибиотиков. Только натуральный корм, горная вода и свежий воздух.</p>
+        <h1>Фермерское перепелиное яйцо<br>и мясо с доставкой</h1>
+        <p class="hero-subtitle">Натуральная фермерская продукция из предгорий Катуни — свежая, полезная и с заботой о вашем здоровье.</p>
 
-        <ul class="badges reveal" style="--d:260ms">
-          <li class="badge"><span class="badge-ic">♻</span> ЭКО&nbsp;продукт</li>
-          <li class="badge"><span class="badge-ic">♥</span> 100%&nbsp;свежие</li>
-          <li class="badge"><span class="badge-ic">✚</span> Польза&nbsp;для&nbsp;здоровья</li>
+        <ul class="badges">
+          <li class="badge"><span class="badge-ic"><svg class="ic"><use href="#i-leaf"/></svg></span>ЭКО продукт</li>
+          <li class="badge"><span class="badge-ic"><svg class="ic"><use href="#i-heart"/></svg></span>100% свежее</li>
+          <li class="badge"><span class="badge-ic"><svg class="ic"><use href="#i-shield"/></svg></span>Польза для здоровья</li>
         </ul>
 
-        <div class="hero-actions reveal" style="--d:340ms">
-          <a href="#contacts" class="btn btn-primary">Оставить заявку</a>
-          <a href="tel:[ТЕЛЕФОН]" class="btn btn-ghost">Позвонить: [ТЕЛЕФОН]</a>
+        <div class="hero-actions">
+          <a href="#contacts" class="btn btn-primary">Оставить заявку <svg class="ic"><use href="#i-plane"/></svg></a>
+          <a href="tel:[ТЕЛЕФОН]" class="btn btn-ghost">Позвонить <svg class="ic"><use href="#i-phone"/></svg></a>
         </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="assets/hero-photo.jpg" alt="Упаковка перепелиных яиц «Катунские Перепёлки» и перепелиное мясо на деревянном столе">
       </div>
     </div>
   </section>
 
-  <section class="guarantees" aria-label="Наши гарантии">
-    <div class="container guarantees-row">
-      <div class="guar"><span class="guar-ic">♻</span><span><b>Эко-производство</b><br>натуральные корма</span></div>
-      <span class="guar-sep"></span>
-      <div class="guar"><span class="guar-ic">☀</span><span><b>Собрано сегодня</b><br>доставим свежим</span></div>
-      <span class="guar-sep"></span>
-      <div class="guar"><span class="guar-ic">⛰</span><span><b>Предгорья Катуни</b><br>чистая зона Алтая</span></div>
-    </div>
-  </section>
-
   <section class="catalog" id="catalog">
+    <span class="doodle doodle-tl" aria-hidden="true"><svg class="ic" style="width:64px;height:64px"><use href="#i-leaf"/></svg></span>
     <div class="container">
       <div class="section-head">
-        <span class="kicker"><span class="kicker-dash"></span>Наш ассортимент<span class="kicker-dash"></span></span>
-        <h2 class="section-title">Свежая продукция фермы</h2>
-        <p class="section-subtitle">Забираем от несушек утром — привозим вам в тот же день. Всё, что нужно для здорового стола.</p>
+        <span class="kicker"><svg class="ic ic-sm"><use href="#i-leaf"/></svg>Наша продукция<svg class="ic ic-sm"><use href="#i-leaf"/></svg></span>
+        <h2 class="section-title">Каталог товаров</h2>
       </div>
 
       <div class="product-grid">
         <article class="product-card">
           <div class="product-image-wrap">
             <img src="assets/product-eggs.jpg" alt="Перепелиное яйцо, упаковка 20 штук" class="product-image">
-            <span class="ribbon">20 штук</span>
           </div>
           <div class="product-body">
-            <h3>Перепелиное яйцо</h3>
-            <p>Отборное фермерское яйцо в эко-упаковке. Идеально для здорового питания и детского рациона.</p>
+            <h3>Перепелиное яйцо, 20 шт</h3>
+            <p>Свежие фермерские яйца перепёлки. Богаты витаминами и микроэлементами.</p>
             <div class="product-footer">
-              <span class="product-price">[ЦЕНА]&nbsp;₽<small>/ 20 шт</small></span>
-              <a href="#contacts" class="btn btn-small">Заказать</a>
+              <span class="product-price">[ЦЕНА] ₽</span>
+              <a href="#contacts" class="btn btn-small">Заказать <svg class="ic"><use href="#i-basket"/></svg></a>
             </div>
           </div>
         </article>
@@ -98,14 +104,13 @@
         <article class="product-card">
           <div class="product-image-wrap">
             <img src="assets/product-meat.jpg" alt="Перепелиное мясо, натуральное и полезное" class="product-image">
-            <span class="ribbon">Натуральное</span>
           </div>
           <div class="product-body">
             <h3>Перепелиное мясо</h3>
-            <p>Нежное диетическое мясо без лишнего жира. Натуральное и полезное — как из домашней печи.</p>
+            <p>Натуральное и полезное мясо перепёлки. Идеально для правильного питания.</p>
             <div class="product-footer">
-              <span class="product-price">[ЦЕНА]&nbsp;₽<small>/ кг</small></span>
-              <a href="#contacts" class="btn btn-small">Заказать</a>
+              <span class="product-price">[ЦЕНА] ₽</span>
+              <a href="#contacts" class="btn btn-small">Заказать <svg class="ic"><use href="#i-basket"/></svg></a>
             </div>
           </div>
         </article>
@@ -113,78 +118,78 @@
     </div>
   </section>
 
-  <section class="band" aria-hidden="true">
-    <div class="band-photo"></div>
-    <div class="band-quote container">
-      <p>«От нашей фермы&nbsp;— к вашему столу»</p>
-    </div>
-  </section>
-
   <section class="about" id="about">
-    <div class="about-glow"></div>
     <div class="container about-inner">
-      <div class="about-head">
-        <span class="kicker kicker-light"><span class="kicker-dash light"></span>Наша история</span>
-        <h2 class="section-title light">Ферма в сердце Алтая</h2>
-        <p class="about-lead">Ферма «[НАЗВАНИЕ ФЕРМЫ]» расположена в предгорьях Катуни. Мы выращиваем перепёлок в чистой экологической зоне, кормим только натуральными кормами и не применяем гормоны роста. Каждая партия проходит контроль качества перед отправкой.</p>
+      <div class="about-text">
+        <span class="kicker kicker-light">О ферме</span>
+        <h2 class="section-title light">Натуральность в каждом продукте</h2>
+        <p>Наша ферма расположена в экологически чистом районе предгорий Катуни. Мы заботимся о птицах и природе, чтобы вы получали только качественные и полезные продукты.</p>
+        <a href="#catalog" class="btn btn-outline">Подробнее о ферме <svg class="ic"><use href="#i-arrow"/></svg></a>
       </div>
 
       <div class="advantages">
         <div class="advantage-card">
-          <span class="advantage-ic">🌿</span>
+          <span class="advantage-ic"><svg class="ic"><use href="#i-leaf"/></svg></span>
           <h3>Натуральность</h3>
-          <p>Без гормонов и антибиотиков — только натуральные корма.</p>
+          <p>Без гормонов и добавок. Только натуральные корма и чистая вода.</p>
         </div>
         <div class="advantage-card">
-          <span class="advantage-ic">☀️</span>
+          <span class="advantage-ic"><svg class="ic"><use href="#i-clock"/></svg></span>
           <h3>Свежесть</h3>
-          <p>Собираем и доставляем в кратчайшие сроки.</p>
+          <p>Продукция ежедневно свежая с нашей фермы.</p>
         </div>
         <div class="advantage-card">
-          <span class="advantage-ic">⛰️</span>
-          <h3>Экология</h3>
-          <p>Чистая зона в предгорьях Катуни, вдали от городов.</p>
+          <span class="advantage-ic"><svg class="ic"><use href="#i-pine"/></svg></span>
+          <h3>Экологичность</h3>
+          <p>Эко-подход и забота о природе для будущих поколений.</p>
         </div>
         <div class="advantage-card">
-          <span class="advantage-ic">💚</span>
-          <h3>Польза</h3>
-          <p>Богато витаминами и микроэлементами для всей семьи.</p>
+          <span class="advantage-ic"><svg class="ic"><use href="#i-heart"/></svg></span>
+          <h3>Польза для здоровья</h3>
+          <p>Богаты белком, витаминами и микроэлементами. Укрепляют иммунитет.</p>
         </div>
       </div>
     </div>
+    <div class="farm-band" style="background-image:url('assets/farm-landscape.svg')"></div>
   </section>
 
   <section class="contacts" id="contacts">
     <div class="container contacts-inner">
       <div class="contacts-info">
-        <span class="kicker kicker-light"><span class="kicker-dash light"></span>Свяжитесь с нами</span>
-        <h2 class="section-title light">Оформить заказ</h2>
-        <p class="contacts-lead">Оставьте заявку или позвоните — расскажем о наличии, ценах и доставке.</p>
+        <span class="kicker kicker-light">Контакты</span>
+        <h2 class="section-title light">Свяжитесь с нами</h2>
 
         <ul class="contacts-list">
-          <li><span class="ci">✆</span><div><b>Телефон</b><a href="tel:[ТЕЛЕФОН]">[ТЕЛЕФОН]</a></div></li>
-          <li><span class="ci">⌂</span><div><b>Адрес</b><span>[АДРЕС]</span></div></li>
-          <li><span class="ci">✉</span><div><b>E-mail</b><a href="mailto:[EMAIL]">[EMAIL]</a></div></li>
-          <li><span class="ci">◆</span><div><b>Соцсети</b><span><a href="[ССЫЛКА НА ВКОНТАКТЕ]">ВКонтакте</a> · <a href="[ССЫЛКА НА TELEGRAM]">Telegram</a></span></div></li>
+          <li><span class="ci"><svg class="ic"><use href="#i-phone"/></svg></span><a href="tel:[ТЕЛЕФОН]">[ТЕЛЕФОН]</a></li>
+          <li><span class="ci"><svg class="ic"><use href="#i-pin"/></svg></span><span>[АДРЕС]</span></li>
+          <li><span class="ci"><svg class="ic"><use href="#i-mail"/></svg></span><a href="mailto:[EMAIL]">[EMAIL]</a></li>
+          <li><span class="ci ci-text">VK</span><a href="[ССЫЛКА НА ВКОНТАКТЕ]">vk.com/[ВАШ_АККАУНТ]</a></li>
+          <li><span class="ci ci-text">TG</span><a href="[ССЫЛКА НА TELEGRAM]">t.me/[ВАШ_АККАУНТ]</a></li>
         </ul>
 
-        <div class="map-placeholder" aria-label="Здесь будет карта проезда">Здесь будет карта проезда</div>
+        <div class="map-placeholder" aria-label="Здесь будет карта проезда">Здесь будет карта</div>
       </div>
 
-      <form class="order-form" id="orderForm" novalidate>
-        <h3>Оставить заявку</h3>
-        <p class="form-note">Перезвоним в течение рабочего дня.</p>
+      <form class="order-form" id="orderForm">
+        <span class="kicker form-kicker">Оставить заявку</span>
+        <h3>Мы свяжемся с вами!</h3>
 
-        <label for="name">Имя</label>
-        <input type="text" id="name" name="name" required autocomplete="name" placeholder="Как к вам обращаться">
+        <label for="name" class="sr-only">Имя</label>
+        <input type="text" id="name" name="name" required autocomplete="name" placeholder="Ваше имя*">
 
-        <label for="phone">Телефон</label>
-        <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+7 (___) ___-__-__">
+        <label for="phone" class="sr-only">Телефон</label>
+        <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="Телефон*">
 
-        <label for="comment">Комментарий</label>
-        <textarea id="comment" name="comment" rows="3" placeholder="Что интересует: яйцо, мясо, объём заказа"></textarea>
+        <label for="comment" class="sr-only">Комментарий</label>
+        <textarea id="comment" name="comment" rows="3" placeholder="Комментарий (необязательно)"></textarea>
 
-        <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+        <label class="consent">
+          <input type="checkbox" id="consent" required>
+          <span class="consent-box"><svg class="ic"><use href="#i-check"/></svg></span>
+          <span>Нажимая кнопку «Отправить заявку», вы соглашаетесь на обработку персональных данных.</span>
+        </label>
+
+        <button type="submit" class="btn btn-primary btn-block">Отправить заявку <svg class="ic"><use href="#i-plane"/></svg></button>
 
         <p class="form-success" id="formSuccess" role="status" hidden>Спасибо! Мы свяжемся с вами в ближайшее время.</p>
       </form>
@@ -194,18 +199,41 @@
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <a href="#top" class="brand footer-brand">
-      <img src="assets/logo-badge.jpg" alt="" class="footer-logo">
-      <span class="brand-name">Катунские<br><em>Перепёлки</em></span>
-    </a>
-    <div class="footer-dash"></div>
-    <p>© [ГОД] Катунские Перепёлки · Фермерская продукция</p>
-    <p class="footer-meta">Телефон: [ТЕЛЕФОН] · [АДРЕС]</p>
-    <p class="footer-social">
-      <a href="[ССЫЛКА НА ВКОНТАКТЕ]">ВКонтакте</a> ·
-      <a href="[ССЫЛКА НА TELEGRAM]">Telegram</a>
-    </p>
+  <div class="container footer-grid">
+    <div class="footer-col footer-brand-col">
+      <a href="#top" class="brand footer-brand">
+        <img src="assets/logo-badge.jpg" alt="" class="brand-logo">
+        <span class="brand-copy">
+          <span class="brand-name">Катунские</span>
+          <span class="brand-tag">Фермерская продукция</span>
+        </span>
+      </a>
+      <p class="footer-about">Натуральные продукты для здоровой жизни вашей семьи.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Навигация</h4>
+      <a href="#catalog">Каталог</a>
+      <a href="#about">О ферме</a>
+      <a href="#contacts">Контакты</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Продукция</h4>
+      <a href="#catalog">Перепелиное яйцо</a>
+      <a href="#catalog">Перепелиное мясо</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Мы в соцсетях</h4>
+      <div class="footer-social">
+        <a href="[ССЫЛКА НА ВКОНТАКТЕ]" class="ci ci-text" aria-label="ВКонтакте">VK</a>
+        <a href="[ССЫЛКА НА TELEGRAM]" class="ci ci-text" aria-label="Telegram">TG</a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© [ГОД] Катунские Перепёлки. Все права защищены.</p>
   </div>
 </footer>
 
