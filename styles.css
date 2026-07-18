@@ -207,10 +207,22 @@ h1, h2, h3, h4 {
 
 /* ---------- catalog ---------- */
 
-.catalog { position: relative; padding: 92px 0; background: var(--kraft); overflow: hidden; }
-.catalog::before { content: ""; position: absolute; inset: 0; background-image: var(--grain); opacity: .05; pointer-events: none; }
-.doodle { position: absolute; color: var(--green); opacity: .18; pointer-events: none; }
+.catalog {
+  position: relative; padding: 92px 0; overflow: hidden;
+  background:
+    radial-gradient(600px 360px at 90% 0%, rgba(239,157,63,.18), transparent 60%),
+    linear-gradient(155deg, #8a6238 0%, #6b4a2c 55%, #543a22 100%);
+}
+.catalog::before { content: ""; position: absolute; inset: 0; background-image: var(--grain); opacity: .1; mix-blend-mode: overlay; pointer-events: none; }
+.catalog .section-title { color: var(--cream-2); }
+.catalog .kicker { background: var(--green-2); }
+
+.doodle { position: absolute; color: var(--kraft); opacity: .22; pointer-events: none; }
 .doodle-tl { top: 30px; left: 26px; transform: rotate(-12deg); }
+.doodle-tl2 { top: 100px; left: 92px; transform: rotate(24deg); opacity: .14; }
+.doodle-br { bottom: 40px; right: 40px; transform: rotate(150deg); }
+.doodle-feather { top: 34px; right: 46px; color: var(--sun); opacity: .3; transform: rotate(20deg); }
+.doodle-quail { bottom: 18px; right: 34px; color: rgba(250,243,226,.16); }
 
 .product-grid { position: relative; display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
 
@@ -257,21 +269,22 @@ h1, h2, h3, h4 {
 
 .advantages { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
 .advantage-card {
-  background: rgba(250,243,226,.08);
-  border: 1px solid rgba(250,243,226,.16);
+  background: var(--kraft);
+  border: 1px solid rgba(74,48,24,.08);
   border-radius: var(--r-sm);
   padding: 24px 20px;
-  transition: transform .2s ease, background .2s ease;
+  box-shadow: 0 14px 30px -18px rgba(0,0,0,.45);
+  transition: transform .2s ease, box-shadow .2s ease;
 }
-.advantage-card:hover { transform: translateY(-4px); background: rgba(250,243,226,.13); }
+.advantage-card:hover { transform: translateY(-4px); box-shadow: 0 20px 38px -18px rgba(0,0,0,.5); }
 .advantage-ic {
   display: inline-grid; place-items: center; width: 46px; height: 46px; margin-bottom: 12px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--sun) 0%, var(--sun-2) 100%);
 }
 .advantage-ic .ic { color: #3a2410; width: 22px; height: 22px; }
-.advantage-card h3 { color: var(--cream); font-size: 16.5px; margin: 0 0 6px; }
-.advantage-card p { color: rgba(250,243,226,.72); font-size: 13.5px; margin: 0; line-height: 1.5; }
+.advantage-card h3 { color: var(--wood); font-size: 16.5px; margin: 0 0 6px; }
+.advantage-card p { color: var(--ink-soft); font-size: 13.5px; margin: 0; line-height: 1.5; }
 
 .farm-band {
   position: relative;
@@ -294,6 +307,11 @@ h1, h2, h3, h4 {
 .contacts .kicker-light .ic { color: var(--sun); }
 .contacts .section-title.light { color: var(--green); }
 
+.eggs-corner {
+  position: absolute; left: 0; bottom: 0; width: 300px; height: auto;
+  opacity: .8; pointer-events: none;
+}
+
 .contacts-list { list-style: none; padding: 0; margin: 0 0 24px; display: flex; flex-direction: column; gap: 12px; }
 .contacts-list li { display: flex; align-items: center; gap: 14px; }
 .contacts-list a, .contacts-list span:not(.ci) { font-size: 16px; font-weight: 700; color: var(--ink); text-decoration: none; }
@@ -305,6 +323,8 @@ h1, h2, h3, h4 {
   background: var(--green); color: var(--cream);
 }
 .ci .ic { color: var(--cream); }
+.ci-accent { background: linear-gradient(135deg, var(--sun) 0%, var(--sun-2) 100%); }
+.ci-accent .ic { color: #3a2410; }
 .ci-text { font-size: 12px; font-weight: 900; letter-spacing: .02em; text-decoration: none !important; }
 
 .map-placeholder {
@@ -364,8 +384,10 @@ h1, h2, h3, h4 {
 /* ---------- footer ---------- */
 
 .site-footer {
+  position: relative;
   background: var(--wood-deep); color: rgba(250,243,226,.85);
   padding: 56px 0 0;
+  overflow: hidden;
 }
 .footer-grid {
   display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px;
